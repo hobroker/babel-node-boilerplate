@@ -1,10 +1,6 @@
 {
-  "ignore": [
-    ".git",
-    "node_modules/**/node_modules"
-  ],
-  "watch": [
-    "./src",
-    ".babelrc"
-  ]
+  "ignore": [".git", "node_modules/**/node_modules"],
+  "nodeArgs": ["-r", "@babel/register"],
+  "watch": ["./src", ".env"],
+  "exec": "node"
 }

@@ -1,10 +1,10 @@
-import Something from '../src';
+/* eslint-disable max-classes-per-file */
 
 describe('should work', () => {
   it('@babel/plugin-syntax-decorators', async () => {
     const prefix = 'prefix-';
 
-    const addPrefix = value => ({ descriptor }) => {
+    const addPrefix = value => (parent, methodNamwe, descriptor) => {
       const originalFn = descriptor.value;
       descriptor.value = function newDescriptorValue(...args) {
         return value + originalFn.apply(this, args);
