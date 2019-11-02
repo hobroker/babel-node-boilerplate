@@ -1,3 +1,5 @@
+/* eslint-disable no-console */
+
 const decorator = Class => {
   Class.thing = 'in constructor';
 };
@@ -34,10 +36,10 @@ console.log('obj.a.b.c.d.e.f = ', obj.a?.b?.c?.d?.e?.f);
 console.log(null ?? 'default');
 console.log('one' ?? 'default');
 
-export default Something;
-
 // @babel/plugin-proposal-export-default-from
 // export X from './X'
 
 // @babel/plugin-transform-runtime
 // run `npm run build` and check the output in /build
+
+export default Something;
