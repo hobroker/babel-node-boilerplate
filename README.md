@@ -14,7 +14,7 @@ npm install
 * `dev:watch` - uses `nodemon` to  re-run the app every file change (check `/nodemon.json` for config) 
 * `build` - compiles everything with `babel` from `/src` into `/build`
 * `start` - runs the app from `/build/index.js` (assuming you compiled the app before)
-* `lint` - runs lint for `/src` directory
+* `lint` - runs lint for `/src/**/*.js`
 * `test` - runs tests from `/tests`
 
 
