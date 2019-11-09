@@ -4,7 +4,7 @@
   "description": "",
   "author": "Igor Leahu <igor.leahu@gmail.com>",
   "repository": "github:hobroker/babel-node-boilerplate",
-  "license": "ISC",
+  "license": "MIT",
   "scripts": {
     "start": "node build/index.js",
     "dev": "node -r @babel/register src/index.js",

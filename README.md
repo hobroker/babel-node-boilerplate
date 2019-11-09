@@ -1,6 +1,4 @@
-[![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/as-seen-on-tv.svg)](https://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/fuck-it-ship-it.svg)](https://forthebadge.com) [![Greenkeeper badge](https://badges.greenkeeper.io/hobroker/babel-node-boilerplate.svg)](https://greenkeeper.io/)
+# Babel Node Boilerplate [![Greenkeeper badge](https://badges.greenkeeper.io/hobroker/babel-node-boilerplate.svg)](https://greenkeeper.io/)
 
 ## Installation
 ```bash
@@ -26,4 +24,3 @@ npm install
 * [@babel/plugin-proposal-class-properties](https://babeljs.io/docs/en/babel-plugin-proposal-class-properties)
 * [@babel/plugin-proposal-optional-chaining](https://babeljs.io/docs/en/babel-plugin-proposal-optional-chaining)
 * [@babel/plugin-proposal-nullish-coalescing-operator](https://babeljs.io/docs/en/babel-plugin-proposal-nullish-coalescing-operator)
-* [@babel/plugin-transform-runtime](https://babeljs.io/docs/en/babel-plugin-transform-runtime)
