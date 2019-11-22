@@ -1,7 +1,7 @@
 {
   "name": "babel-node-boilerplate",
   "version": "0.0.1",
-  "description": "",
+  "description": "Boilerplate for using babel features in node",
   "author": "Igor Leahu <igor.leahu@gmail.com>",
   "repository": "github:hobroker/babel-node-boilerplate",
   "license": "MIT",
@@ -10,8 +10,9 @@
     "dev": "node -r @babel/register src/index.js",
     "dev:watch": "nodemon --inspect=8050 src/index.js",
     "build": "babel src -d build",
-    "lint": "eslint src --ext .js --max-warnings 0",
-    "test": "NODE_ENV=test jest"
+    "lint": "eslint src tests --ext .js --max-warnings 0",
+    "test": "NODE_ENV=test jest",
+    "test:coverage": "NODE_ENV=test jest --coverage"
   },
   "devDependencies": {
     "@babel/cli": "^7.6.4",
@@ -44,14 +45,19 @@
     }
   },
   "lint-staged": {
-    "src/**/*.js": [
+    "(src|tests)/**/*.js": [
       "eslint --max-warnings 0"
     ]
   },
   "jest": {
-    "testEnvironment": "node",
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true,
     "coveragePathIgnorePatterns": [
       "/node_modules/"
-    ]
+    ],
+    "modulePathIgnorePatterns": [
+      "/build"
+    ],
+    "testEnvironment": "node"
   }
 }
